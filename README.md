@@ -1,13 +1,21 @@
 # File Tunnel
 
+[![npm](https://img.shields.io/npm/v/ftunnel?style=flat)](https://npmjs.org/package/ftunnel)
+
 A CLI program to temporary host a file in internet via ngrok tunnel. Share link via barcode or copy the hyperlink from your terminal.
 
 ### Usage:
 
+Install globally:
+
+```sh
+npm install -g ftunnel
+```
+
 Host a file:
 
 ```sh
-ftunnel <file name in current dir>
+ftunnel <file-name-in-current-dir>
 ```
 
 ### Development
