@@ -30,7 +30,7 @@ const endpoint = await ngrok.connect({
     addr: 8080,
 });
 
-const url = endpoint + "/" + arg[2];
+const url = arg[2] == undefined ? endpoint : endpoint + "/" + arg[2];
 
 console.log(url);
 
