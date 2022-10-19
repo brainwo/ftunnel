@@ -1,0 +1,21 @@
+{
+    "name": "file-tunnel",
+    "version": "0.1.0",
+    "description": "Quickly host your file in internet without cloud",
+    "main": "index.js",
+    "type": "module",
+    "bin": {
+        "ftunnel": "index.js"
+    },
+    "author": "Brian Wo <45139213+brainwo@users.noreply.github.com>",
+    "license": "MIT",
+    "dependencies": {
+        "ngrok": "^4.3.3",
+        "qrcode": "^1.5.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.25.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.26.0"
+    }
+}
