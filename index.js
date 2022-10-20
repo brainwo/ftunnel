@@ -10,6 +10,11 @@ const arg = process.argv;
 
 if (arg[2] != undefined) {
     http.createServer(function (req, res) {
+        if (req.url != "/" + arg[2]) {
+            res.writeHead(404);
+            res.end("Error");
+            return;
+        }
         fs.readFile(process.cwd() + req.url, function (err, data) {
             if (err) {
                 res.writeHead(404);
