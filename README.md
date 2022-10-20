@@ -18,6 +18,8 @@ Host a file:
 ftunnel <file-name-in-current-dir>
 ```
 
+![sample-usage](img/screenshot.png)
+
 ### Development
 
 Install the required dependencies:
