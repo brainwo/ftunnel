@@ -8,16 +8,10 @@ A CLI program to temporary host a file in internet via ngrok tunnel. Share link 
 
 Since version `0.2.0` you are now required to set your [ngrok token](https://dashboard.ngrok.com/get-started/your-authtoken) as `NGROK_AUTHTOKEN` environment variable.
 
-Install globally:
+Run the program:
 
 ```sh
-npm install -g ftunnel
-```
-
-Host a file:
-
-```sh
-ftunnel <file-name-in-current-dir>
+npx ftunnel <file-name-in-current-dir>
 ```
 
 ![sample-usage](img/screenshot.png)
