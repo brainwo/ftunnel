@@ -6,6 +6,8 @@ A CLI program to temporary host a file in internet via ngrok tunnel. Share link 
 
 ### Usage:
 
+Since version `0.2.0` you are now required to set your [ngrok token](https://dashboard.ngrok.com/get-started/your-authtoken) as `NGROK_AUTHTOKEN` environment variable.
+
 Install globally:
 
 ```sh

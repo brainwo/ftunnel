@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import * as ngrok from "ngrok";
+import * as ngrok from "@ngrok/ngrok";
 import * as http from "http";
 import * as fs from "fs";
 import * as process from "process";
@@ -35,9 +35,11 @@ if (arg[2] != undefined) {
 
 const endpoint = await ngrok.connect({
   addr: 8080,
+  authtoken_from_env: true,
 });
 
-const url = arg[2] == undefined ? endpoint : endpoint + "/" + arg[2];
+const url =
+  arg[2] == undefined ? endpoint.url() : endpoint.url() + "/" + arg[2];
 
 console.log(url);
 
