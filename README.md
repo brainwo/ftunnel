@@ -9,10 +9,15 @@ A CLI program to temporary host a file in internet via ngrok tunnel. Share link 
 
 Since version `0.2.0` you are now required to set your [ngrok token](https://dashboard.ngrok.com/get-started/your-authtoken) as `NGROK_AUTHTOKEN` environment variable.
 
-Run the program:
+#### Run the program:
 
 ```sh
 npx ftunnel <file-name-in-current-dir>
+```
+
+or if you prefer to use bun:
+```sh
+bunx ftunnel <file-name-in-current-dir>
 ```
 
 ![sample-usage](img/screenshot.png)
